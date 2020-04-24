@@ -18,3 +18,13 @@ for d in data:
 	if len(d) < 100:
 		new.append(d)
 print('總共有', len(new), '筆資料小於100的字母')
+
+""" 
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print ('總共有', len(good), '筆留言有good')
+"""
+good =  [d for d in data if 'good' in d]
+print(good.strip())
